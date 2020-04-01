@@ -1,0 +1,6 @@
+<h2>Welcome {{name}}</h2>
+<h2 class="text-success">Hardcoded text-success class</h2>
+<h2 [class]="successClass">classbinding</h2>
+<h2 class="text-special" [class]="successClass">Hardcoded text-special class + classbinding</h2>
+<h2 [class.text-danger]="hasError">binding based on boolean</h2>
+<h2 [ngClass]="messageClass">Multiple classes</h2>
