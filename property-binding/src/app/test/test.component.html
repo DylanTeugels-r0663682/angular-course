@@ -1,0 +1,5 @@
+<h2>Welcome {{name}}!</h2>
+<input [id]="myId" type="text" value="Dylan"> <!-- []="" -->
+<input id={{myId}} type="text" value="Dylan2"> <!-- hetzelfde als hierboven maar dan met interpolatie -->
+<input [disabled]="isDisabled" type="text" value="Dylan3"> <!-- interpolatie kan enkel met strings gebruikt worden. bij booleans bv moet property binding gebruikt worden -->
+<input bind-disabled="isDisabled" type="text" value="Dylan4"> <!-- een andere syntax voor property binding -->
